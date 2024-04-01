@@ -1,0 +1,98 @@
+adb shell pm uninstall in.amazon.mShop.android.shopping
+adb shell pm uninstall com.facebook.katana
+adb shell pm uninstall in.mohalla.sharechat
+adb shell pm uninstall in.mohalla.video
+adb shell pm uninstall com.eterno
+adb shell pm uninstall com.google.android.apps.magazines
+adb shell pm uninstall com.google.android.apps.subscriptions.red
+adb shell pm uninstall com.google.android.videos
+adb shell pm uninstall com.google.android.apps.podcasts
+adb shell pm uninstall com.snapchat.android
+adb shell pm uninstall com.spotify.music
+adb shell pm uninstall com.byjus.thelearningapp
+
+adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
+adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
+adb shell pm uninstall -k --user 0 com.netflix.mediaclient
+adb shell pm uninstall -k --user 0 com.facebook.appmanager
+adb shell pm uninstall -k --user 0 com.facebook.services
+adb shell pm uninstall -k --user 0 com.facebook.system
+adb shell pm uninstall -k --user 0 com.google.android.youtube
+adb shell pm uninstall -k --user 0 com.google.android.apps.youtube.music
+adb shell pm uninstall -k --user 0 com.android.chrome
+adb shell pm uninstall -k --user 0 com.bbk.cloud.overlay
+adb shell pm uninstall -k --user 0 com.bbk.account.overlay
+adb shell pm uninstall -k --user 0 com.google.android.apps.photos
+adb shell pm uninstall -k --user 0 com.android.bbk.lockscreen3
+adb shell pm uninstall -k --user 0 com.google.ar.lens
+adb shell pm uninstall -k --user 0 com.android.deskclock
+adb shell pm uninstall -k --user 0 com.vivo.doubletimezoneclock
+
+adb shell pm uninstall -k --user 0 com.bbk.cloud
+adb shell pm uninstall -k --user 0 com.bbk.account
+adb shell pm uninstall -k --user 0 com.iqoo.website
+adb shell pm uninstall -k --user 0 com.vivo.notes
+adb shell pm uninstall -k --user 0 com.vivo.feedback
+adb shell pm uninstall -k --user 0 com.vivo.share.overlay
+adb shell pm uninstall -k --user 0 com.vivo.unionpay
+adb shell pm uninstall -k --user 0 com.vivo.easyshare
+adb shell pm uninstall -k --user 0 com.vivo.calculator
+adb shell pm uninstall -k --user 0 com.vivo.magazine
+adb shell pm uninstall -k --user 0 com.vivo.widgetweather
+adb shell pm uninstall -k --user 0 com.vivo.browser
+adb shell pm uninstall -k --user 0 com.vivo.timerwidget
+adb shell pm uninstall -k --user 0 com.vivo.desktopstickers
+adb shell pm uninstall -k --user 0 com.vivo.livewallpaper.plant
+adb shell pm uninstall -k --user 0 com.vivo.widget.cleanspeed
+adb shell pm uninstall -k --user 0 com.vivo.musicwidgetmix
+adb shell pm uninstall -k --user 0 com.vivo.widget.gallery
+adb shell pm uninstall -k --user 0 com.vivo.Tips
+adb shell pm uninstall -k --user 0 com.vivo.weather
+adb shell pm uninstall -k --user 0 com.vivo.floatingball
+adb shell pm uninstall -k --user 0 com.vivo.game
+adb shell pm uninstall -k --user 0 com.vivo.gamecube
+adb shell pm uninstall -k --user 0 com.vivo.browser.overlay
+adb shell pm uninstall -k --user 0 com.vivo.gamepad
+adb shell pm uninstall -k --user 0 com.vivo.aiengine
+adb shell pm uninstall -k --user 0 com.vivo.setupwizard
+adb shell pm uninstall -k --user 0 com.vivo.tws.vivotws
+adb shell pm uninstall -k --user 0 com.vivo.share
+adb shell pm uninstall -k --user 0 com.bbk.iqoo.logsystem
+adb shell pm uninstall -k --user 0 com.funtouch.uiengine
+adb shell pm uninstall -k --user 0 com.yozo.vivo.office
+adb shell pm uninstall -k --user 0 com.yozo.vivo.office.overlay
+adb shell pm uninstall -k --user 0 com.vivo.scanner
+
+# Stuff not working
+# -----------------
+
+adb shell service call package 131 s16 com.vivo.appstore i32 0 i32 0
+adb shell service call package 131 s16 com.vivo.assistant i32 0 i32 0
+adb shell service call package 131 s16 com.vivo.assistantfunction i32 0 i32 0
+adb shell service call package 131 s16 com.vivo.weather.provider i32 0 i32 0
+adb shell service call package 131 s16 com.vivo.doubleinstance i32 0 i32 0
+adb shell service call package 131 s16 com.vivo.globalsearch i32 0 i32 0
+adb shell service call package 131 s16 com.vivo.hiboard i32 0 i32 0
+
+adb shell service call package 134 s16 com.vivo.appstore i32 0 i32 0
+adb shell service call package 134 s16 com.vivo.assistant i32 0 i32 0
+adb shell service call package 134 s16 com.vivo.assistantfunction i32 0 i32 0
+adb shell service call package 134 s16 com.vivo.weather.provider i32 0 i32 0
+adb shell service call package 134 s16 com.vivo.doubleinstance i32 0 i32 0
+adb shell service call package 134 s16 com.vivo.globalsearch i32 0 i32 0
+adb shell service call package 134 s16 com.vivo.hiboard i32 0 i32 0
+
+adb shell pm disable-user --user 0 com.vivo.appstore
+adb shell pm disable-user --user 0 com.vivo.assistant
+adb shell pm disable-user --user 0 com.vivo.assistantfunction
+adb shell pm disable-user --user 0 com.vivo.weather.provider
+adb shell pm disable-user --user 0 com.vivo.doubleinstance
+adb shell pm disable-user --user 0 com.vivo.globalsearch
+adb shell pm disable-user --user 0 com.vivo.hiboard
+
+# Don't touch
+# -----------
+
+#      com.vivo.imanager
+#      com.bbk.updater
+#      com.vivo.smartshot
